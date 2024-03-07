@@ -1,0 +1,17 @@
+<div class="flex flex-col mx-auto">
+  <% @books.each do |book| %>
+  <div class="flex flex-row mx-[250px] justify-items-center mb-6 bg-gray-200 p-3 rounded-lg">
+    <div class="max-w-[300px]">
+      <%= image_tag book.cover_url %>
+    </div>
+    <div class="flex flex-col ml-6 w-[600px]">
+      <h3 class="font-bold mb-3"><%= book.title %></h3>
+      <div class="overflow-hidden">
+        <p class=" truncate line-clamp-4 whitespace-pre-line">
+          <%= book.description %>
+        </p>
+      </div>
+    </div>
+  </div>
+  <% end %>
+</div>

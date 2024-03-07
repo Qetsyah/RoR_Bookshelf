@@ -1,21 +1,23 @@
 class Book < ApplicationRecord
   enum :genre, {
    software_engineering: 0,
-   paranormal_culinary_mysteries: 1,
-   alien_romance: 2,
-   cryptozoological_memoirs: 3,
-   supernatural_self_help: 4,
-   time_traveling_pets: 5,
-   mythological_mashup: 6,
-   conspiracy_theory_bothany: 7
+   design: 1,
+   project_management: 2,
+   ruby: 3,
+   elixir: 4,
+   phoenix: 5,
+   android: 6,
+   ios: 7,
+   finance: 8,
+   productivity: 9
   }
 
   belongs_to :shelf
-  has_may :reservations, dependent: :destroy
-  has_one :active_reservation -> { active }, class_name: 'Reservation'
+  has_many :reservations, dependent: :destroy
 
-  validate presence_of: :title, :genre, :shelf, :cover_url
-  validate uniqueness_of: :title
+  validates :title, :genre, :shelf, :cover_url, presence: true
+
+  has_one :active_reservation, -> { active }, class_name: 'Reservation'
 
   def available?
     active_reservation.blank?
