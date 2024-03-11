@@ -31,3 +31,5 @@ end
 gem "factory_bot_rails", "~> 6.4"
 
 gem "tailwindcss-rails", "~> 2.3"
+
+gem 'simplecov', require: false, group: :test

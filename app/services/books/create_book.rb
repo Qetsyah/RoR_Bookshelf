@@ -3,10 +3,12 @@ module Books
     Result = Struct.new(:success?, :book, :errors, keyword_init: true)
 
     def initialize(book_params)
-      @book_params = book_params.merge(shelf: Shelf.first)
+      shelf = Shelf.first || Shelf.create!
+      @book_params = book_params.merge(shelf: shelf)
     end
 
     def perform
+
       book = Book.create!(@book_params)
       Result.new(success?: true, book: book)
     rescue ActiveRecord::RecordInvalid => error
