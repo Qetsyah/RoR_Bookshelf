@@ -14,7 +14,7 @@ Book.create!(
   author: 'Robert C. Martin',
   genre: :software_engineering,
   shelf: shelf,
-  cover_url: 'https://elpythonista.com/wp-content/uploads/2020/10/Clean_Code-portada-1024x576.jpg',
+  cover_url: 'https://images.pexels.com/photos/2023384/pexels-photo-2023384.jpeg',
 )
 
 Book.create!(
@@ -25,7 +25,7 @@ Book.create!(
   author: 'Donald Norman',
   genre: :design,
   shelf: shelf,
-  cover_url: 'https://elpythonista.com/wp-content/uploads/2020/10/Clean_Code-portada-1024x576.jpg'
+  cover_url: 'https://images.pexels.com/photos/1458916/pexels-photo-1458916.jpeg'
 )
 
 Book.create!(
@@ -37,7 +37,7 @@ Book.create!(
   author: 'David Allen',
   genre: :project_management,
   shelf: shelf,
-  cover_url: 'https://elpythonista.com/wp-content/uploads/2020/10/Clean_Code-portada-1024x576.jpg'
+  cover_url: 'https://images.pexels.com/photos/1346086/pexels-photo-1346086.jpeg'
 )
 
 Book.create!(
@@ -48,7 +48,7 @@ Book.create!(
   author: 'Russ Olsen',
   genre: :ruby,
   shelf: shelf,
-  cover_url: 'https://elpythonista.com/wp-content/uploads/2020/10/Clean_Code-portada-1024x576.jpg'
+  cover_url: 'https://images.pexels.com/photos/406014/pexels-photo-406014.jpeg'
 )
 
 Book.create!(
@@ -60,7 +60,7 @@ Book.create!(
   author: 'Dave Thomas',
   genre: :elixir,
   shelf: shelf,
-  cover_url: 'https://elpythonista.com/wp-content/uploads/2020/10/Clean_Code-portada-1024x576.jpg'
+  cover_url: 'https://images.pexels.com/photos/1851164/pexels-photo-1851164.jpeg'
 )
 
 
@@ -73,7 +73,7 @@ Book.create!(
   author: 'Chris McCord',
   genre: :phoenix,
   shelf: shelf,
-  cover_url: 'https://elpythonista.com/wp-content/uploads/2020/10/Clean_Code-portada-1024x576.jpg'
+  cover_url: 'https://images.pexels.com/photos/1619690/pexels-photo-1619690.jpeg'
 )
 
 Book.create!(
@@ -86,7 +86,7 @@ Book.create!(
   author: 'Dawn Griffiths, David Griffiths',
   genre: :android,
   shelf: shelf,
-  cover_url: 'https://elpythonista.com/wp-content/uploads/2020/10/Clean_Code-portada-1024x576.jpg'
+  cover_url: 'https://images.pexels.com/photos/1390361/pexels-photo-1390361.jpeg'
 )
 
 Book.create!(
@@ -98,7 +98,7 @@ Book.create!(
   author: 'Apple',
   genre: :ios,
   shelf: shelf,
-  cover_url: 'https://elpythonista.com/wp-content/uploads/2020/10/Clean_Code-portada-1024x576.jpg'
+  cover_url: 'https://images.pexels.com/photos/1629781/pexels-photo-1629781.jpeg'
 )
 
 Book.create!(
@@ -110,7 +110,7 @@ Book.create!(
   author: 'Burton Malkiel',
   genre: :finance,
   shelf: shelf,
-  cover_url: 'https://elpythonista.com/wp-content/uploads/2020/10/Clean_Code-portada-1024x576.jpg'
+  cover_url: 'https://images.pexels.com/photos/97863/pexels-photo-97863.jpeg'
 )
 
 Book.create!(
@@ -122,6 +122,6 @@ Book.create!(
   author: 'Cal Newport',
   genre: :productivity,
   shelf: shelf,
-  cover_url: 'https://elpythonista.com/wp-content/uploads/2020/10/Clean_Code-portada-1024x576.jpg'
+  cover_url: 'https://images.pexels.com/photos/485294/pexels-photo-485294.jpeg'
 )
 
