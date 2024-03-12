@@ -1,0 +1,27 @@
+<%= form_with(model: @book) do |form| %>
+  <div class="w-100 flex flex-col mb-6">
+    <%= form.label :title , class:'mb-3' %>
+    <%= form.text_field :title, class:'rounded-lg' %>
+  </div>
+
+  <div class="w-100 flex flex-col mb-6">
+    <%= form.label :genre , class:'mb-3' %>
+    <%= form.select :genre, formatted_genres, class:'rounded-lg' %>
+  </div>
+
+  <div class="w-100 flex flex-col mb-6">
+    <%= form.label :description , class:'mb-3' %>
+    <%= form.text_area :description, rows: 10, class:'rounded-lg' %>
+  </div>
+
+  <div class="w-100 flex flex-col mb-6">
+    <%= form.label :cover_url , class:'mb-3' %>
+    <%= form.text_field :cover_url, class:'rounded-lg' %>
+  </div>
+
+  <div class="w-100 flex flex-col mb-6">
+    <button class="bg-purple-300 w-100 p-2 rounded-lg text-white text-bold">
+      <%= form.submit "Submit" %>
+    </button>
+  </div>
+<% end %>

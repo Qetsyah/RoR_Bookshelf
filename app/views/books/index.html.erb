@@ -1,0 +1,26 @@
+<div class="flex flex-col mx-auto">
+  <% @books.each do |book| %>
+  <div class="mx-[250px] justify-items-center mb-6 bg-gray-200 p-3 rounded-lg h-[250px]">
+    <div class="flex flex-row h-full justify-between">
+      <div class="h-full">
+        <%= link_to book_path(book) do %>
+          <%= image_tag book.cover_url , class:'max-w-[150px] max-h-[200px] pb-6'%>
+        <% end %>
+      </div>
+      <div class="flex flex-col ml-6 w-[500px] px-6">
+          <h3 class="font-bold mb-3"><%= book.title %></h3>
+          <div class="overflow-hidden">
+            <p class=" truncate line-clamp-4 whitespace-pre-line mb-3">
+              <%= book.description %>
+            </p>
+          </div>
+      </div>
+      <div>
+        <%= link_to edit_book_path(book) do %>
+          <p class="px-8 pl-4 bg-purple-300 rounded-lg text-center text-white max-w-[60px]"> Edit </p>
+        <% end %>
+      </div>
+    </div>
+  </div>
+  <% end %>
+</div>
